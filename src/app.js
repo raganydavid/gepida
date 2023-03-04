@@ -1,3 +1,13 @@
+/*
+File: app.js
+Author: Ragány Dávid Gergő
+Copyright: 2023, Ragány Dávid Gergő
+Group: Szoft I-2-E
+Date: 2023.03.04
+Github: https://github.com/raganydavid/gepida
+Licenc: GNU GPL 
+*/
+
 const body = document.querySelector("#tableBody");
 
 var empList =  [
@@ -14,10 +24,10 @@ function tableCreation(){
 
 	    let row = document.createElement("tr");
 
-        let dataName = document.createElement("td");
-        let dataWheel = document.createElement("td");
-        let dataUsage = document.createElement("td");
-        let dataPrice = document.createElement("td");
+        let dataName = document.createElement("th");
+        let dataWheel = document.createElement("th");
+        let dataUsage = document.createElement("th");
+        let dataPrice = document.createElement("th");
 
         dataName.textContent = emp.name;
         dataWheel.textContent = emp.wheel;
